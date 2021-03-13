@@ -64,5 +64,12 @@ namespace Cipherator
             }
             else rawCae.Text = Caesar(finCae.Text, -7);
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Vlevo vložte text, který chcete zašifrovat.\n" +
+                            "Vpravo se vypíše zašifrovaný text\n" +
+                            "Pro dešivrování již zašifrovaného textu, vložte jej vpravo");
+        }
     }
 }

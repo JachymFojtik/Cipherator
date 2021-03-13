@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Cipherator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="rawXor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="147,105,0,0" TextChanged="Xor_Write"/>
-        <TextBox x:Name="rawCae" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="147,204,0,0" TextChanged="Caesar_Write"/>
-        <TextBox x:Name="finCae" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="378,204,0,0" TextChanged="Caesar_Write"/>
-        <TextBox x:Name="finXor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="378,105,0,0" TextChanged="Xor_Write"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        Title="MainWindow" Height="220" Width="600">
+    <Grid Background="#FFAE6317">
+        <TextBox x:Name="rawXor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="160,34,0,0" TextChanged="Xor_Write" FontWeight="Bold"/>
+        <TextBox x:Name="rawCae" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="160,78,0,0" TextChanged="Caesar_Write" FontWeight="Bold"/>
+        <TextBox x:Name="finCae" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="362,80,0,0" TextChanged="Caesar_Write" FontWeight="Bold"/>
+        <TextBox x:Name="finXor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="362,36,0,0" TextChanged="Xor_Write" FontWeight="Bold"/>
+        <Label Content="Xor šifra" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,33,0,0" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Cézarova šifra" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,72,0,0" FontSize="18" FontWeight="Bold"/>
+        <Label Content="čisté" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="191,0,0,0" FontSize="18" FontWeight="Bold"/>
+        <Label Content="zašifrované" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="362,2,0,0" FontSize="18" FontWeight="Bold"/>
+        <Button Content="?" HorizontalAlignment="Left" VerticalAlignment="Top" Width="39" Margin="301,129,0,0" Height="40" FontSize="22" FontWeight="Bold" Click="Button_Click"/>
 
     </Grid>
 </Window>
