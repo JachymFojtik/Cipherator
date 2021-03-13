@@ -31,7 +31,7 @@ namespace Cipherator
                 var result = new StringBuilder();
 
                 for (int c = 0; c < text.Length; c++)
-                    result.Append((char)((uint)text[c] ^ (uint)key[c % key.Length]));
+                    result.Append((char)(text[c] ^ key[c % key.Length]));
 
                 return result.ToString();
             }
@@ -43,6 +43,14 @@ namespace Cipherator
             {
                 char letter = buffer[i];
                 letter = (char)(letter + shift);
+                if (letter > 'z')
+                {
+                    letter = (char)(letter - 26);
+                }
+                else if (letter < 'a')
+                {
+                    letter = (char)(letter + 26);
+                }
                 buffer[i] = letter;
             }
             return new string(buffer);
