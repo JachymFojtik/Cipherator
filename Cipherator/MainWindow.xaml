@@ -1,0 +1,17 @@
+﻿<Window x:Class="Cipherator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cipherator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="rawXor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="147,105,0,0" TextChanged="Xor_Write"/>
+        <TextBox x:Name="rawCae" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="147,204,0,0" TextChanged="Caesar_Write"/>
+        <TextBox x:Name="finCae" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="378,204,0,0" TextChanged="Caesar_Write"/>
+        <TextBox x:Name="finXor" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="378,105,0,0" TextChanged="Xor_Write"/>
+        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
